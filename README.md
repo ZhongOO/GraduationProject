@@ -25,6 +25,11 @@ Implementation of shopping and price comparison tools based on AR technology
 待解决问题：<br>
 运行Android-Object-Detection工程，在手机上调试时，AS未报错，但是APP获取图片之后出现闪退的问题
 
+#### 2020.03.06
+用了一天的时间重新学习了移动应用开发的知识 <br>
+**待解决问题：** <br>
+Android-Object-Detection工程在手机运行闪退问题 <br>
+***(新问题)*** 如何将unity3D上的代码和AS上的代码整合
 
 
 
