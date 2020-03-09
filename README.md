@@ -31,6 +31,7 @@ Implementation of shopping and price comparison tools based on AR technology
 Android-Object-Detection工程在手机运行闪退问题 <br>
 ***(新问题)*** 如何将unity3D上的代码和AS上的代码整合
 
-
+#### 2020.03.09
+闪退原因是因为原来的caffe用不了，这几天看了官网上caffe的介绍和使用，win10系统下需要安装hyper-V或使用Linux系统，但我电脑通过hyper-V安装虚拟机有问题，所以，如果用caffe的话，打算用阿里云服务器试试。
 
 
