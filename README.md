@@ -40,7 +40,7 @@ Android-Object-Detection工程在手机运行闪退问题 <br>
 用2天时间，在B站学习了tensorflow框架的知识和使用方法 <br>
 用3天时间，在服务器配置好了Mask RCNN模型所需要的环境，并安装好了Mask RCNN模型，成功运行了项目给的demo，中间因为tensorflow版本和cuda版本不匹配导致的依赖库链接丢失问题花费了比较长时间 <br>
 **待解决问题** <br>
-将Mask_RCNN模型运用到AS工程中
+将Mask_RCNN模型运用到AS工程中 <br>
 **接下来计划** <br>
 实现Mask_RCNN模型运用到AS工程中 <br>
 
