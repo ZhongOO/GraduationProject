@@ -43,4 +43,5 @@ Android-Object-Detection工程在手机运行闪退问题 <br>
 将Mask_RCNN模型运用到AS工程中 <br>
 **接下来计划** <br>
 实现Mask_RCNN模型运用到AS工程中 <br>
+试用万邦提供的新的电商以图搜图的API(如果有时间) <br>
 
