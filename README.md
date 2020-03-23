@@ -50,9 +50,9 @@ Android-Object-Detection工程在手机运行闪退问题 <br>
 学习了tensorflow lite相关的知识<br>
 成功运行了tensorflow给的Android demo，阅读了其中的代码<br>
 将模型和权重保存成h5文件失败了<br>
-**待解决问题**
+**待解决问题**<br>
 将模型和权重保存，并转换成tflite的文件格式<br>
 这几天尝试了将自己写的模型导出成h5文件和转换tflite文件，结果没有生成这些文件，在终端和pycharm上都运行了代码，但在根目录下全局搜索都未找到本应该生成的文件。并且，把同一份代码在Linux环境、tensorflow版本都一致的情况下运行，生成了h5文件并成功转换成了tflite文件。目前很懵逼，为什么会这样，代码在pycharm上运行和终端运行的时候都没有报错。<br>
-**接下来计划**
+**接下来计划**<br>
 打算再挣扎一会通过h5文件生成tflite的方法，如果不行考虑GraphDef和CheckPoint生成tflite的方法。
 
