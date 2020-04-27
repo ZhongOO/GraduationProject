@@ -54,5 +54,40 @@ Android-Object-Detection工程在手机运行闪退问题 <br>
 将模型和权重保存，并转换成tflite的文件格式<br>
 这几天尝试了将自己写的模型导出成h5文件和转换tflite文件，结果没有生成这些文件，在终端和pycharm上都运行了代码，但在根目录下全局搜索都未找到本应该生成的文件。并且，把同一份代码在Linux环境、tensorflow版本都一致的情况下运行，生成了h5文件并成功转换成了tflite文件。目前很懵逼，为什么会这样，代码在pycharm上运行和终端运行的时候都没有报错。<br>
 **接下来计划**<br>
-打算再挣扎一会通过h5文件生成tflite的方法，如果不行考虑GraphDef和CheckPoint生成tflite的方法。
+打算再挣扎一会通过h5文件生成tflite的方法，如果不行考虑GraphDef和CheckPoint生成tflite的方法。<br>
 
+#### 2020.04.27
+修改了YOLO安卓工程里面的classfier类，目前可以获得bbx中心点的坐标。<br>
+使用网络上的图片，在Android工程里面测试了万邦的API，完成了对返回的商品item的处理，对返回的item进行平台分类、价格排序等。<br>
+**待解决的问题**<br>
+本地图片Base64编码失败,代码如下,报出错误的代码是FileInputStream(path)部分<br>
+``` java
+public static String imageToBase64(String path){
+        if(TextUtils.isEmpty(path)){
+            return null;
+        }
+        Log.d(TAG,"path --> "+path);
+        InputStream inputStream=null;
+        byte[] data;
+        String result=null;
+        try {
+            inputStream=new FileInputStream(path);
+            data=new byte[inputStream.available()];
+            Log.d(TAG,"data --> "+data);
+            inputStream.read(data);
+            result=Base64.encodeToString(data,Base64.NO_WRAP);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if(null!=inputStream){
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return result;
+    }
+```
+另外还需要解决从实时相机中获取图片的问题，初步打算通过比较当前label和上一次的label来决定是否需要保存当前的视野中的图片。<br>
